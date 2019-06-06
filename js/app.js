@@ -4,7 +4,6 @@ function html(ele, code) {
 
 function makeTimer() {
   var endTime = new Date("July 26, 2019 17:00:00");
-  //var endTime = new Date("April 2, 2018 8:16:00 MDT");
   var endTime = Date.parse(endTime) / 1000;
 
   var now = new Date();
@@ -44,16 +43,12 @@ function makeTimer() {
     html(O, "Till we get married!");
   }
   let width = Math.abs(days);
-  console.log(width);
   $("#gap").css("maxWidth", width + "%");
-//   $("#timeLeft").css("maxWidth", width + "%");
   $("#daysNumber").html(width);
   if (width <= 10) {
     $("#daysLeft").css("marginBottom", 4 + "em");
   }
 }
-// $("#gap").width("20%");
-// $("#gap").css("border-color", "red");
 
 setInterval(function() {
   makeTimer();
