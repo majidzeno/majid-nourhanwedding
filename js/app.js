@@ -3,7 +3,7 @@ function html(ele, code) {
 }
 
 function makeTimer() {
-  var endTime = new Date("July 26, 2019 5:00:00");
+  var endTime = new Date("July 26, 2019 17:00:00");
   //var endTime = new Date("April 2, 2018 8:16:00 MDT");
   var endTime = Date.parse(endTime) / 1000;
 
